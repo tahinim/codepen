@@ -18,6 +18,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
+  background-color: black;
 }
 
 p {
@@ -32,12 +33,16 @@ p {
 
 .button {
   background: pink;
-  border-radius: 50px;
+  border-radius: 15px 50px 30px;
   padding: 20px 20px;
   color: #fff;
   text-decoration: none;
-  font-size: 1.45em;
+  font-size: 3em;
   margin: 15px 15px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-align: center;
 }
 
 /* Hover state animation applied here */
@@ -50,18 +55,8 @@ p {
 .button:active {
   -webkit-animation: active 1200ms ease 1 alternate;
   animation: active 1200ms ease 1 alternate;
-  background: #5F9BE0;
 }
 
-.gray {
-  background: #D2D2D2;
-}
-
-.gray:active {
-  background: #b9b9b9;
-}
-
-/* Active state animation keyframes below */
 @-webkit-keyframes active {
   0% {
     -webkit-transform: scale(1, 1);

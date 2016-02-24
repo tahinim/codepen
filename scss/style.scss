@@ -1,3 +1,9 @@
-@import 'base';
-@import 'mixins';
-@import 'components/main';
+// Import mixins, variables, and other modules, usually compass related
+@import "base";
+@import "mixins";
+
+// Component rules
+@import "components/main";
+
+// Vendor
+
